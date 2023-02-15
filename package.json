@@ -1,6 +1,6 @@
 {
-  "name": "crypt3",
-  "version": "1.0.0",
+  "name": "crypt3-bindings",
+  "version": "1.0.1",
   "description": "crypt3 C bindings for nodejs",
   "main": "index.js",
   "author": "Julius Zaromskis",
@@ -12,21 +12,10 @@
   },
   "scripts": {
     "install": "node-gyp-build",
-    "test": "node test.js",
-    "release": "release-it"
+    "test": "node test.js"
   },
   "dependencies": {
     "node-gyp": "^9.3.1",
-    "node-gyp-build": "^4.6.0",
-    "release-it": "^15.6.0"
-  },
-  "release-it": {
-    "git": {
-      "tagName": "v${version}",
-      "commitMessage": "release v${version}"
-    },
-    "github": {
-      "release": true
-    }
+    "node-gyp-build": "^4.6.0"
   }
 }

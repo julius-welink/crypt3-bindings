@@ -1,3 +1,8 @@
 const { encrypt } = require("./index");
 
-console.log(encrypt("test", "test"));
+function test() {
+  const hash = encrypt("test", "salt");
+  console.assert(hash === "$1$salt$No6gqynaE4urT3jScs91F/")
+}
+
+test();
