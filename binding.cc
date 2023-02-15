@@ -23,7 +23,7 @@ napi_value hashPassword(napi_env env, napi_callback_info info) {
     napi_get_value_int32(env, argv[2], &algo_num);
 
     char unix_salt[128];
-    int sprintf_result = sprintf(unix_salt, "$%d$%s", algo_num, salt_str);
+    int sprintf_result = snprintf(unix_salt, sizeof(unix_salt), "$%d$%s", algo_num, salt_str);
     if (sprintf_result < 0) {
         napi_throw_error(env, NULL, "Error constructing Unix salt string.");
         return NULL;
