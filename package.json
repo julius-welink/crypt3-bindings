@@ -1,6 +1,6 @@
 {
   "name": "crypt3-bindings",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "crypt3 C bindings for nodejs",
   "main": "index.js",
   "author": "Julius Zaromskis",
@@ -11,13 +11,12 @@
     "url": "git+https://github.com/julius-welink/crypt3-bindings"
   },
   "scripts": {
-    "install": "node-gyp-build",
+    "install": "if [ $(uname) = 'Linux' ]; then node-gyp-build; else echo 'crypt3-bindings: only linux OS is supported'; fi",
     "test": "node test.js"
   },
   "dependencies": {
     "node-gyp": "^9.3.1",
     "node-gyp-build": "^4.6.0"
   },
-  "os": ["linux"],
   "keywords": ["openwrt", "md5crypt", "/etc/passwd"]
 }
