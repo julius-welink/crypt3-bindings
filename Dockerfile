@@ -8,3 +8,5 @@ RUN yarn install
 
 COPY ./ /crypt3
 RUN yarn test
+
+ENTRYPOINT ["/bin/bash"]
