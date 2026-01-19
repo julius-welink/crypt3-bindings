@@ -1,6 +1,6 @@
 {
   "name": "crypt3-bindings",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "crypt3 C bindings for nodejs",
   "main": "index.js",
   "author": "Julius Zaromskis",
@@ -15,8 +15,12 @@
     "test": "node test.js"
   },
   "dependencies": {
-    "node-gyp-build": "^4.6.0",
-    "node-gyp": "^9.3.1"
+    "node-gyp": "^12.1.0",
+    "node-gyp-build": "^4.6.0"
   },
-  "keywords": ["openwrt", "md5crypt", "/etc/passwd"]
+  "keywords": [
+    "openwrt",
+    "md5crypt",
+    "/etc/passwd"
+  ]
 }
