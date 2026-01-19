@@ -1,6 +1,6 @@
 {
   "name": "crypt3-bindings",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "crypt3 C bindings for nodejs",
   "main": "index.js",
   "author": "Julius Zaromskis",
@@ -22,5 +22,14 @@
     "openwrt",
     "md5crypt",
     "/etc/passwd"
+  ],
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "binding.cc",
+    "binding.gyp",
+    "README.md",
+    "LICENSE"
   ]
 }
