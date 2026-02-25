@@ -1,6 +1,6 @@
 {
   "name": "crypt3-bindings",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "crypt3 C bindings for nodejs",
   "main": "index.js",
   "author": "Julius Zaromskis",
@@ -12,7 +12,8 @@
   },
   "scripts": {
     "install": "if [ $(uname) = 'Linux' ]; then node-gyp-build; else echo 'crypt3-bindings: only linux OS is supported'; fi",
-    "test": "node test.js"
+    "test": "node test.js",
+    "publish": "bash publish.sh"
   },
   "dependencies": {
     "node-gyp": "^12.1.0",
